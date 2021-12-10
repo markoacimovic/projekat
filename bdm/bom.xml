@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.agency.model.KategorijaPosla">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.Ponuda">
+            <fields>
+                <field type="BOOLEAN" length="255" name="ponudaPotvrdjena" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="cena" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="rokZavrsetka" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.ZahtevZaNabavku">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.agency.model.KategorijaPosla" fetchType="EAGER" name="kategorijePoslova" nullable="true" collection="true"/>
+                <field type="TEXT" length="255" name="opisPosla" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="maxVrednost" nullable="false" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="rokPrimanjaPonuda" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="maxPonuda" nullable="false" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="rokIzvrsenjaPosla" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.agency.model.Ponuda" fetchType="LAZY" name="listaPonuda" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="zavrsen" nullable="false" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="terminPocetka" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="brojObnavljanja" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="zahtevZaPojasnjenje" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="dodatneInformacije" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.agency.model.ZavrsetakPosla" fetchType="LAZY" name="zavrsetakPosla" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.ZavrsetakPosla">
+            <fields>
+                <field type="BOOLEAN" length="255" name="zavrsenPosao" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="ocenaFirme" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="ocenaKorisnika" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

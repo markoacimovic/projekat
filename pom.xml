@@ -93,6 +93,20 @@
       <artifactId>groovy-servlet</artifactId>
       <scope>provided</scope>
     </dependency>
+<<<<<<< HEAD
+=======
+    <dependency>
+      <groupId>com.company.model</groupId>
+      <artifactId>bdm-client</artifactId>
+      <version>1.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-initiator</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+>>>>>>> branch 'master' of https://github.com/markoacimovic/projekat
   </dependencies>
   <build>
     <pluginManagement>
