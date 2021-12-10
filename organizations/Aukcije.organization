@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Aukcije">
-  <customUserInfoDefinitions>
-    <customUserInfoDefinition>
-      <name>KategorijePoslova</name>
-      <description>Kategorije poslova firme</description>
-    </customUserInfoDefinition>
-    <customUserInfoDefinition>
-      <name>ProsecnaOcena</name>
-      <description>Prosecna ocena korisnika ili firme</description>
-    </customUserInfoDefinition>
-  </customUserInfoDefinitions>
+  <customUserInfoDefinitions/>
   <users/>
   <roles>
     <role name="AgentFirme">
