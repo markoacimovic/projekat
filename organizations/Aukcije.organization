@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Aukcije">
+  <customUserInfoDefinitions/>
+  <users/>
+  <roles>
+    <role name="AgentFirme">
+      <displayName>Agent firme</displayName>
+    </role>
+    <role name="Klijent">
+      <displayName>Klijent</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="AukcijskaKuca">
+      <displayName>Aukcijska kuca</displayName>
+    </group>
+    <group name="RegistrovaniKorisnici" parentPath="/AukcijskaKuca">
+      <displayName>Registrovani korisnici</displayName>
+    </group>
+    <group name="AgentFirme" parentPath="/AukcijskaKuca/RegistrovaniKorisnici">
+      <displayName>Agent firme</displayName>
+      <description>Agent koji je zaposlen u firmi</description>
+    </group>
+    <group name="Klijenti" parentPath="/AukcijskaKuca/RegistrovaniKorisnici">
+      <displayName>Klijent</displayName>
+      <description>Klijent koji traži neku uslugu&#xD;
+</description>
+    </group>
+  </groups>
+  <memberships/>
+</organization:Organization>
