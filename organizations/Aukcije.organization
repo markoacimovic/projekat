@@ -26,6 +26,9 @@
       <description>Klijent koji traži neku uslugu&#xD;
 </description>
     </group>
+    <group name="NeregistrovaniKorisnici" parentPath="/AukcijskaKuca">
+      <displayName>Neregistrovani korisnici</displayName>
+    </group>
   </groups>
   <memberships/>
 </organization:Organization>
