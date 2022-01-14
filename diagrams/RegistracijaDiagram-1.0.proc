@@ -64,6 +64,36 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_QYWgt3OkEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:Data" xmi:id="_TlK9wHRvEeyrPPse5EXkIw" name="ime" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_TlK9wXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_VenLoHRvEeyrPPse5EXkIw" name="prezime" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_VenLoXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_ZsT7IHRvEeyrPPse5EXkIw" name="email" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_ZsT7IXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_b_8KoHRvEeyrPPse5EXkIw" name="korisnickoIme" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_b_8KoXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_cp0OEHRvEeyrPPse5EXkIw" name="lozinka" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_cp0OEXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_fSSFIHRvEeyrPPse5EXkIw" name="adresa" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_fSSFIXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_fyFmkHRvEeyrPPse5EXkIw" name="mesto" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_fyFmkXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_hou_IHRvEeyrPPse5EXkIw" name="postanskiBroj" dataType="_zeVTfnOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_hou_IXRvEeyrPPse5EXkIw" content="" returnType="java.lang.Integer"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_uLuloHRvEeyrPPse5EXkIw" name="vrstaKorisnika" dataType="_qnH2cHRvEeyrPPse5EXkIw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_uLuloXRvEeyrPPse5EXkIw" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_1ezKoHRvEeyrPPse5EXkIw" name="kategorijePoslova" dataType="_zeVTgXOhEey-E4Rwhm-sEw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_1ezKoXRvEeyrPPse5EXkIw" content="" type="TYPE_READ_ONLY_SCRIPT"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_zeVTZHOhEey-E4Rwhm-sEw">
         <targetForm xmi:type="expression:Expression" xmi:id="_zeVTZXOhEey-E4Rwhm-sEw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -126,6 +156,10 @@
     <datatypes xmi:type="process:JavaType" xmi:id="_zeVTgnOhEey-E4Rwhm-sEw" name="Java_object"/>
     <datatypes xmi:type="process:XMLType" xmi:id="_zeVTg3OhEey-E4Rwhm-sEw" name="XML"/>
     <datatypes xmi:type="process:BusinessObjectType" xmi:id="_zeVThHOhEey-E4Rwhm-sEw" name="Business_Object"/>
+    <datatypes xmi:type="process:EnumType" xmi:id="_qnH2cHRvEeyrPPse5EXkIw" name="Vrsta korisnika">
+      <literals>Klijent</literals>
+      <literals>Agent firme</literals>
+    </datatypes>
   </process:MainProcess>
   <notation:Diagram xmi:id="_zeVThXOhEey-E4Rwhm-sEw" type="Process" element="_zeVTUHOhEey-E4Rwhm-sEw" name="MyDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Node" xmi:id="_zeVThnOhEey-E4Rwhm-sEw" type="2007" element="_zeVTUXOhEey-E4Rwhm-sEw">

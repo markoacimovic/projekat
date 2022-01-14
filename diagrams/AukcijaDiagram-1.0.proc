@@ -317,6 +317,12 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_n4OHoHOoEey-E4Rwhm-sEw" name="zahtevZaNabavku" dataType="_ns_61HOeEey-E4Rwhm-sEw" className="com.agency.model.ZahtevZaNabavku">
         <defaultValue xmi:type="expression:Expression" xmi:id="_n4OHoXOoEey-E4Rwhm-sEw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_oIGE0HVXEeyc1aEl5YBJcw" name="ponuda" multiple="true" dataType="_ns_61HOeEey-E4Rwhm-sEw" className="com.agency.model.Ponuda">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_oIGE0XVXEeyc1aEl5YBJcw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_sYPrYHVXEeyc1aEl5YBJcw" name="zavrsetakPosla" dataType="_ns_61HOeEey-E4Rwhm-sEw" className="com.agency.model.ZavrsetakPosla">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_sYPrYXVXEeyc1aEl5YBJcw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_ns_6tHOeEey-E4Rwhm-sEw">
         <targetForm xmi:type="expression:Expression" xmi:id="_ns_6tXOeEey-E4Rwhm-sEw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
