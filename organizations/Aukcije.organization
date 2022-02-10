@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Aukcije">
-  <customUserInfoDefinitions/>
-  <users/>
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>kategorijePoslova</name>
+      <description>Poslovek koje firma pruza</description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
+  <users>
+    <user userName="gost">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">gost</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>kategorijePoslova</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="admin">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">admin</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>kategorijePoslova</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+  </users>
   <roles>
     <role name="AgentFirme">
       <displayName>Agent firme</displayName>
@@ -30,5 +58,17 @@
       <displayName>Neregistrovani korisnici</displayName>
     </group>
   </groups>
-  <memberships/>
+  <memberships>
+    <membership>
+      <userName>gost</userName>
+      <roleName>Klijent</roleName>
+      <groupName>NeregistrovaniKorisnici</groupName>
+      <groupParentPath>/AukcijskaKuca</groupParentPath>
+    </membership>
+    <membership>
+      <userName>admin</userName>
+      <roleName>AgentFirme</roleName>
+      <groupName>AukcijskaKuca</groupName>
+    </membership>
+  </memberships>
 </organization:Organization>
