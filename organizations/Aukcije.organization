@@ -3,7 +3,7 @@
   <customUserInfoDefinitions>
     <customUserInfoDefinition>
       <name>kategorijePoslova</name>
-      <description>Poslovek koje firma pruza</description>
+      <description>Poslove koje firma pruza</description>
     </customUserInfoDefinition>
   </customUserInfoDefinitions>
   <users>
