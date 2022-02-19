@@ -11,6 +11,7 @@
         </businessObject>
         <businessObject qualifiedName="com.agency.model.Ponuda">
             <fields>
+                <field type="LONG" length="255" name="agentId" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="ponudaPotvrdjena" nullable="false" collection="false"/>
                 <field type="DOUBLE" length="255" name="cena" nullable="true" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="rokZavrsetka" nullable="true" collection="false"/>
@@ -21,6 +22,7 @@
         </businessObject>
         <businessObject qualifiedName="com.agency.model.ZahtevZaNabavku">
             <fields>
+                <field type="LONG" length="255" name="userId" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.agency.model.KategorijaPosla" fetchType="EAGER" name="kategorijePoslova" nullable="true" collection="true"/>
                 <field type="TEXT" length="255" name="opisPosla" nullable="false" collection="false"/>
                 <field type="DOUBLE" length="255" name="maxVrednost" nullable="false" collection="false"/>
