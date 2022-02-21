@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "regForm",
   "name" : "regForm",
-  "lastUpdate" : 1644502597939,
+  "lastUpdate" : 1644596154383,
   "rows" : [
     [
       {
@@ -752,7 +752,7 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 4,
+                  "md" : 6,
                   "lg" : 6
                 },
                 "propertyValues" : {
@@ -816,7 +816,7 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 4,
+                  "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
                   "lg" : 6

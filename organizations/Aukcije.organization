@@ -2,8 +2,8 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Aukcije">
   <customUserInfoDefinitions>
     <customUserInfoDefinition>
-      <name>kategorijePoslova</name>
-      <description>Poslove koje firma pruza</description>
+      <name>Kategorija poslova</name>
+      <description>Kategorije poslova koje firma radi</description>
     </customUserInfoDefinition>
   </customUserInfoDefinitions>
   <users>
@@ -13,7 +13,7 @@
       <password encrypted="false">gost</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>kategorijePoslova</name>
+          <name>Kategorija poslova</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -24,7 +24,7 @@
       <password encrypted="false">admin</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>kategorijePoslova</name>
+          <name>Kategorija poslova</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
