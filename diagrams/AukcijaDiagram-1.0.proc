@@ -8,7 +8,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ns_6pXOeEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ns_6pnOeEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_ns_6p3OeEey-E4Rwhm-sEw" name="Pravljenje zahteva" outgoing="_J1lsYHOmEey-E4Rwhm-sEw" incoming="_ns_6uHOeEey-E4Rwhm-sEw" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_ns_6p3OeEey-E4Rwhm-sEw" name="Pravljenje zahteva" outgoing="_J1lsYHOmEey-E4Rwhm-sEw" incoming="_ns_6uHOeEey-E4Rwhm-sEw" actor="_rbdCwJGBEeyw0I2P8EbU5Q" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ns_6qHOeEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ns_6qXOeEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ns_6qnOeEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
@@ -308,14 +308,14 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_ZsSjgHOfEey-E4Rwhm-sEw" name="Agenti firme" actor="_7qYIcJGBEeyw0I2P8EbU5Q">
-        <elements xmi:type="process:ServiceTask" xmi:id="_PqUEEHOmEey-E4Rwhm-sEw" name="Notifikacija firmama" outgoing="_lJYCIHOwEey-E4Rwhm-sEw" incoming="_iXzBcHOnEey-E4Rwhm-sEw _wppWcHOnEey-E4Rwhm-sEw _e4onYHOxEey-E4Rwhm-sEw _zjaF8HO0Eey-E4Rwhm-sEw _j_D4MHO9Eey-E4Rwhm-sEw" type="PARALLEL" collectionDataToMultiInstantiate="_3nbVwJGUEey-qO_XguYUBw">
+        <elements xmi:type="process:ServiceTask" xmi:id="_PqUEEHOmEey-E4Rwhm-sEw" name="Notifikacija firmama" outgoing="_lJYCIHOwEey-E4Rwhm-sEw" incoming="_iXzBcHOnEey-E4Rwhm-sEw _wppWcHOnEey-E4Rwhm-sEw _e4onYHOxEey-E4Rwhm-sEw _zjaF8HO0Eey-E4Rwhm-sEw _j_D4MHO9Eey-E4Rwhm-sEw" type="PARALLEL" collectionDataToMultiInstantiate="_oIGE0HVXEeyc1aEl5YBJcw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_PqUEEnOmEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_PqUEEXOmEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_PqUEE3OmEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <loopCondition xmi:type="expression:Expression" xmi:id="_PqUEFHOmEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_PqUEFXOmEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_PqUEFnOmEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-          <iteratorExpression xmi:type="expression:Expression" xmi:id="_PqUEGHOmEey-E4Rwhm-sEw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_PqUEGHOmEey-E4Rwhm-sEw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="com.agency.model.Ponuda" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_PqUEF3OmEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_7rdeEHOnEey-E4Rwhm-sEw" name="Slanje ponuda" incoming="_lJYCIHOwEey-E4Rwhm-sEw" actor="_7qYIcJGBEeyw0I2P8EbU5Q">
@@ -450,7 +450,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_O3Ug4HOmEey-E4Rwhm-sEw" target="_O3LW8HOmEey-E4Rwhm-sEw" source="_IcWBgHOmEey-E4Rwhm-sEw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_O3Ug4XOmEey-E4Rwhm-sEw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_O3Ug4nOmEey-E4Rwhm-sEw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_O3Ug4nOmEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_XpNNQHOmEey-E4Rwhm-sEw" target="_XTD-IHOmEey-E4Rwhm-sEw" source="_O3LW8HOmEey-E4Rwhm-sEw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_XpNNQXOmEey-E4Rwhm-sEw"/>
