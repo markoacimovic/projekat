@@ -28,6 +28,7 @@
                 <field type="DOUBLE" length="255" name="maxVrednost" nullable="false" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="rokPrimanjaPonuda" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="maxPonuda" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="minPonuda" nullable="false" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="rokIzvrsenjaPosla" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.agency.model.Ponuda" fetchType="LAZY" name="listaPonuda" nullable="true" collection="true"/>
                 <field type="BOOLEAN" length="255" name="zavrsen" nullable="false" collection="false"/>
