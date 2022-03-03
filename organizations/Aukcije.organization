@@ -35,7 +35,7 @@
       <password encrypted="false">marko123</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>kategorijePoslova</name>
+          <name>Kategorija poslova</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -46,7 +46,18 @@
       <password encrypted="false">milos123</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>kategorijePoslova</name>
+          <name>Kategorija poslova</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="agent">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">agent</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Kategorija poslova</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -102,6 +113,12 @@
       <userName>milos123</userName>
       <roleName>Klijent</roleName>
       <groupName>Klijenti</groupName>
+      <groupParentPath>/AukcijskaKuca/RegistrovaniKorisnici</groupParentPath>
+    </membership>
+    <membership>
+      <userName>agent</userName>
+      <roleName>AgentFirme</roleName>
+      <groupName>AgentFirme</groupName>
       <groupParentPath>/AukcijskaKuca/RegistrovaniKorisnici</groupParentPath>
     </membership>
   </memberships>
