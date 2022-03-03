@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "zahtevZaNabavku",
   "name" : "zahtevZaNabavku",
-  "lastUpdate" : 1646232488180,
+  "lastUpdate" : 1646311051538,
   "rows" : [
     [
       {
@@ -1375,13 +1375,6 @@
       ],
       "exposed" : false
     },
-    "zahtevZaNabavku_listaPonuda" : {
-      "type" : "url",
-      "value" : [
-        "{{zahtevZaNabavku|lazyRef:'listaPonuda'}}"
-      ],
-      "exposed" : false
-    },
     "submit_errors_list" : {
       "type" : "expression",
       "value" : [
@@ -1400,14 +1393,11 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.zahtevZaNabavku && $data.zahtevZaNabavku_listaPonuda && $data.zahtevZaNabavku_zavrsetakPosla ){",
+        "if( $data.zahtevZaNabavku){",
         "\t//attach lazy references variables to parent variables",
-        "\t$data.zahtevZaNabavku.listaPonuda = $data.zahtevZaNabavku_listaPonuda;",
-        "\t$data.zahtevZaNabavku.zavrsetakPosla = $data.zahtevZaNabavku_zavrsetakPosla;",
         "\treturn {",
         "\t\t//map zahtevZaNabavku variable to expected task contract input",
         "\t\tzahtevZaNabavkuInput: {",
-        "\t\t\tuserId: $data.zahtevZaNabavku.userId !== undefined ? $data.zahtevZaNabavku.userId : null,",
         "\t\t\tkategorijePoslova: $data.zahtevZaNabavku.kategorijePoslova.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
         "\t\t\t})),",
@@ -1417,20 +1407,8 @@
         "\t\t\tmaxPonuda: $data.zahtevZaNabavku.maxPonuda !== undefined ? $data.zahtevZaNabavku.maxPonuda : null,",
         "\t\t\tminPonuda: $data.zahtevZaNabavku.minPonuda !== undefined ? $data.zahtevZaNabavku.minPonuda : null,",
         "\t\t\trokIzvrsenjaPosla: $data.zahtevZaNabavku.rokIzvrsenjaPosla !== undefined ? $data.zahtevZaNabavku.rokIzvrsenjaPosla : null,",
-        "\t\t\tlistaPonuda: $data.zahtevZaNabavku.listaPonuda.map( it => ({",
-        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
-        "\t\t\t})),",
-        "\t\t\tzavrsen: $data.zahtevZaNabavku.zavrsen !== undefined ? $data.zahtevZaNabavku.zavrsen : null,",
         "\t\t\tterminPocetka: $data.zahtevZaNabavku.terminPocetka !== undefined ? $data.zahtevZaNabavku.terminPocetka : null,",
         "\t\t\tbrojObnavljanja: $data.zahtevZaNabavku.brojObnavljanja !== undefined ? $data.zahtevZaNabavku.brojObnavljanja : null,",
-        "\t\t\tzahtevZaPojasnjenje: $data.zahtevZaNabavku.zahtevZaPojasnjenje !== undefined ? $data.zahtevZaNabavku.zahtevZaPojasnjenje : null,",
-        "\t\t\tdodatneInformacije: $data.zahtevZaNabavku.dodatneInformacije !== undefined ? $data.zahtevZaNabavku.dodatneInformacije : null,",
-        "\t\t\tzavrsetakPosla: $data.zahtevZaNabavku.zavrsetakPosla.map( it => ({",
-        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
-        "\t\t\t\tzavrsenPosao: it.zavrsenPosao !== undefined ? it.zavrsenPosao : null,",
-        "\t\t\t\tocenaFirme: it.ocenaFirme !== undefined ? it.ocenaFirme : null,",
-        "\t\t\t\tocenaKorisnika: it.ocenaKorisnika !== undefined ? it.ocenaKorisnika : null",
-        "\t\t\t}))",
         "\t\t}",
         "\t}",
         "}"
@@ -1441,13 +1419,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}/context"
-      ],
-      "exposed" : false
-    },
-    "ponuda_query" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/com.agency.model.Ponuda?q=find&p=0&c=99"
       ],
       "exposed" : false
     },
@@ -1462,13 +1433,6 @@
       "type" : "url",
       "value" : [
         "../{{context.zahtevZaNabavku_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "zahtevZaNabavku_zavrsetakPosla" : {
-      "type" : "url",
-      "value" : [
-        "{{zahtevZaNabavku|lazyRef:'zavrsetakPosla'}}"
       ],
       "exposed" : false
     },
