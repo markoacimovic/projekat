@@ -48,6 +48,69 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_XgKtYnOjEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_XgKtYXOjEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_XgKtY3OjEey-E4Rwhm-sEw" name="" content="" returnTypeFixed="true"/>
+          <connectors xmi:type="process:Connector" xmi:id="_wSqwUJr4Eeywa_vwsqtYMA" name="SendEmailRegistration" definitionId="email" event="ON_FINISH" throwErrorEvent="true" namedError="MailSendError" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_wSqwUZr4Eeywa_vwsqtYMA" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwUpr4Eeywa_vwsqtYMA" key="smtpHost">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwU5r4Eeywa_vwsqtYMA" name="localhost" content="localhost" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwVJr4Eeywa_vwsqtYMA" key="smtpPort">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwVZr4Eeywa_vwsqtYMA" name="25" content="25" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwVpr4Eeywa_vwsqtYMA" key="sslSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwV5r4Eeywa_vwsqtYMA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwWJr4Eeywa_vwsqtYMA" key="starttlsSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwWZr4Eeywa_vwsqtYMA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwWpr4Eeywa_vwsqtYMA" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwW5r4Eeywa_vwsqtYMA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwXJr4Eeywa_vwsqtYMA" key="userName">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwXZr4Eeywa_vwsqtYMA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwXpr4Eeywa_vwsqtYMA" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwX5r4Eeywa_vwsqtYMA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwYJr4Eeywa_vwsqtYMA" key="from">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwYZr4Eeywa_vwsqtYMA" name="aukcije@gmail.com" content="aukcije@gmail.com" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwYpr4Eeywa_vwsqtYMA" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwY5r4Eeywa_vwsqtYMA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwZJr4Eeywa_vwsqtYMA" key="to">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwZZr4Eeywa_vwsqtYMA" name="to()" content="return e_mail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_wSqwZpr4Eeywa_vwsqtYMA" name="e_mail" dataType="_zeVTgXOhEey-E4Rwhm-sEw"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwZ5r4Eeywa_vwsqtYMA" key="bcc">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwaJr4Eeywa_vwsqtYMA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwaZr4Eeywa_vwsqtYMA" key="cc">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwapr4Eeywa_vwsqtYMA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwa5r4Eeywa_vwsqtYMA" key="subject">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwbJr4Eeywa_vwsqtYMA" name="Potvrdite registraciju" content="Potvrdite registraciju" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwbZr4Eeywa_vwsqtYMA" key="html">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwbpr4Eeywa_vwsqtYMA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwb5r4Eeywa_vwsqtYMA" key="message">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwcJr4Eeywa_vwsqtYMA" name="&lt;pattern-expression>" content="&lt;p>Uspesna registracija&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwcZr4Eeywa_vwsqtYMA" key="headers">
+                <expression xmi:type="expression:TableExpression" xmi:id="_wSqwcpr4Eeywa_vwsqtYMA"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwc5r4Eeywa_vwsqtYMA" key="charset">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwdJr4Eeywa_vwsqtYMA" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwdZr4Eeywa_vwsqtYMA" key="replyTo">
+                <expression xmi:type="expression:Expression" xmi:id="_wSqwdpr4Eeywa_vwsqtYMA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_wSqwd5r4Eeywa_vwsqtYMA" key="attachments">
+                <expression xmi:type="expression:ListExpression" xmi:id="_wSqweJr4Eeywa_vwsqtYMA"/>
+              </parameters>
+            </configuration>
+          </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_XgKtZHOjEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_XgKtZXOjEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_XgKtZnOjEey-E4Rwhm-sEw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
