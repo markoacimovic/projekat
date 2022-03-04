@@ -31,18 +31,22 @@
     </user>
     <user userName="marko123">
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>marko123@mail.com</email>
+      </professionalData>
       <password encrypted="false">marko123</password>
       <customUserInfoValues>
         <customUserInfoValue>
           <name>Kategorija poslova</name>
-          <value></value>
+          <value>Moleraj</value>
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
     <user userName="milos123">
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>milos123@email.com</email>
+      </professionalData>
       <password encrypted="false">milos123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -53,12 +57,14 @@
     </user>
     <user userName="agent">
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>agent@mail.com</email>
+      </professionalData>
       <password encrypted="false">agent</password>
       <customUserInfoValues>
         <customUserInfoValue>
           <name>Kategorija poslova</name>
-          <value></value>
+          <value>Moleraj</value>
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
