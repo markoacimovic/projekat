@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ponuda",
   "name" : "ponuda",
-  "lastUpdate" : 1646401343403,
+  "lastUpdate" : 1646411498292,
   "rows" : [
     [
       {
@@ -678,11 +678,10 @@
       "exposed" : false
     },
     "getAgentId" : {
-      "type" : "url",
+      "type" : "constant",
       "value" : [
-        "../API/system/session/1"
+        "{{session.user_id}}"
       ],
-      "advancedOptions" : { },
       "exposed" : false
     }
   },
